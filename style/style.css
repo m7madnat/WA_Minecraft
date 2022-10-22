@@ -1,0 +1,215 @@
+body {
+    --side-menu-background: black;
+    --game-background: #87CEFA;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+#mainMenu {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background-image: url(../img/background.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    text-align: center;
+}
+
+#mainMenuText {
+    margin: 50vmin 30%;
+}
+
+.menuBar {
+    background: #727272;
+    color: rgb(247, 247, 247);
+    width: 100%;
+    padding: .5rem 0;
+    margin-bottom: .75rem;
+    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.8);
+    font-size: 1rem;
+    letter-spacing: .025em;
+    border: 2px solid rgba(0, 0, 0, 1);
+    box-shadow: inset 3px 3px 0 rgba(255, 255, 255, 0.5),
+        inset -3px -3px 0 rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.menuBar:hover {
+    background: rgba(115, 107, 221, 1);
+}
+
+.menuBar:focus {
+    color: rgb(246, 246, 44);
+    outline: none;
+}
+
+#worldSize {
+    margin-top: 20px;
+}
+
+#gameContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.inv{
+    visibility: hidden;
+    position: absolute;
+    display: flex;
+}
+.inv2{
+    border: 1px solid black;
+    display: flex;
+    background-color: wheat;
+}
+#gameWindow {
+    background-color: var(--game-background);
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    row-gap: 0;
+    column-gap: 0;
+    overflow: scroll;
+}
+#gameWindow::-webkit-scrollbar {
+    display: none;
+}
+
+.invBlock {
+    width: 5vmin;
+    height: 5vmin;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.invTool {
+    height: 5vmin;
+    width: 5vmin;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#resetBtn {
+    width: 5vmin;
+    height: 5vmin;
+    background-image: url(../img/reset.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#resetBtn:hover {
+    outline: 1px solid white;
+}
+
+.amountOfItem {
+    background-color: white;
+    height: 40%;
+    width: 40%;
+    border-radius: 100%;
+    text-align: center;
+}
+
+.invBlock:hover {
+    outline: 1px solid white;
+}
+
+.invTool:hover {
+    outline: 1px solid white;
+}
+
+.axe {
+    background-image: url(../img/axe.png);
+}
+
+.shovel {
+    background-image: url(../img/shovel.png);
+}
+
+.pickaxe {
+    background-image: url(../img/pickaxe.png);
+}
+
+.grass {
+    background-image: url(../img/grass.png);
+}
+.snowy_grass {
+    background-image: url(../img/snowy_grass.png);
+}
+
+.dirt {
+    background-image: url(../img/dirt.png);
+}
+
+.stone {
+    background-image: url(../img/stone.png);
+}
+
+.wood {
+    background-image: url(../img/wood.png);
+}
+
+.leaves {
+    background-image: url(../img/leaves.png);
+}
+
+.water {
+    background-image: url(../img/water.jpg);
+}
+
+.bucket {
+    background-image: url(../img/bucket.png);
+}
+
+.lava {
+    background-image: url(../img/lava.jpg);
+}
+.lilac
+{
+    background-image: url(../img/lilac.png);
+}
+
+.sky {
+    background-color: skyblue;
+}
+.dark {
+    background-color: black;
+}
+
+.cloud {
+    background-color: #ccc;
+}
+
+.gameTile:hover {
+    box-shadow: inset white 0 0 1px 1px;
+}
+
+.selected {
+    outline: 2px solid red;
+}
+
+
+
+
+/* responsive */
+@media screen and (max-width: 600px) {
+ 
+    .invBlock {
+        width: 8vmin;
+        height: 8vmin;
+    }
+    .invTool {
+        width: 8vmin;
+        height: 8vmin;
+    }
+    #resetBtn {
+        width: 8vmin;
+        height: 8vmin;
+    }
+}
+

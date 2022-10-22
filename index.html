@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft ⛏💎</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+    <div id="mainMenu">
+        <div id="mainMenuText">
+            <div id="startBtn" class="menuBar">Start Game</div>
+            <div id="radioWea" class="menuBar">
+                <input type="radio" id="sun" name="world_weather" value="Sun" checked>
+                <label>Sun</label>
+                <input type="radio" id="dark" name="world_weather" value="Dark">
+                <label>Dark</label>                
+              </div>
+            <div id="worldSize" class="menuBar">
+                World size
+                <div>
+                   <input id="sizeInput" type="text" style="width: 20px;" maxlength="2">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="gameContainer">
+        <div id="gameWindow">
+        </div>
+        <div class="inv">
+            <div class="inv2">
+                <div class="invTool axe clickable"></div>
+                <div class="invTool pickaxe clickable"></div>
+                <div class="invTool shovel clickable"></div>
+                <div class="invTool bucket clickable"></div>
+      
+                <div class="invBlock dirt clickable">
+                    <div class="amountOfItem"><span id="dirtCnt">0</span></div>
+                </div>
+                <div class="invBlock leaves clickable">
+                    <div class="amountOfItem"><span id="leavesCnt">0</span></div>
+                </div>
+                <div class="invBlock stone clickable">
+                    <div class="amountOfItem"><span id="stoneCnt">0</span></div>
+                </div>
+                <div class="invBlock lava clickable">
+                    <div class="amountOfItem"><span id="lavaCnt">0</span></div>
+                </div>
+                <div class="invBlock grass clickable">
+                    <div class="amountOfItem"><span id="grassCnt">0</span></div>
+                </div>
+                <div class="invBlock snowy_grass clickable">
+                    <div class="amountOfItem"><span id="snowyCnt">0</span></div>
+                </div>
+                <div class="invBlock wood clickable">
+                    <div class="amountOfItem"><span id="woodCnt">0</span></div>
+                </div>
+                <div class="invBlock water clickable">
+                    <div class="amountOfItem"><span id="waterCnt">0</span></div>
+                </div>
+                <div id="resetBtn"></div>
+                </div>
+        </div>
+          </div>        
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
